@@ -27,7 +27,7 @@ body {
   text-shadow: 0 0 10px #f4f4f4;
 }
 
-#typedtext {
+.quote {
   width: 60%;
   height: auto;
   padding: 1rem;

@@ -2,7 +2,7 @@ let quoteArray = [];
 let index = 0;
 let textPosition = 0;
 let flag = true;
-let destination = document.getElementById("typedtext");
+let destination = document.querySelector(".quote");
 
 window.addEventListener("load", typewriter);
 
