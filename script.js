@@ -1,43 +1,28 @@
 let quoteArray = [];
 let index = 0;
-let textPosition = 0;
-let flag = true;
+// let button = document.querySelector(".btn");
 let destination = document.querySelector(".quote");
 
-window.addEventListener("load", typewriter);
+window.addEventListener("load", pushQuote);
 
-function loadQuote() {
-  const url = "https://api.quotable.io/random";
-
-  fetch(url)
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        console.log(response.status);
-      }
-    })
-    .then((data) => {
-      quoteArray[index] = data.content;
-    });
+async function getQuote() {
+  try {
+    const response = await fetch("https://api.quotable.io/random")
+      .then((response) => response.json())
+      .then((data) => {
+        quoteArray[index] = data.content;
+      });
+    // console.log(quoteArray[index]);
+    // console.log("Response received");
+    quoteArray[index] += " ";
+    destination.innerHTML = quoteArray[index];
+    return response;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-function typewriter() {
-  if (flag) {
-    loadQuote();
-    quoteArray[index] += " ";
-    flag = false;
-  }
-
-  destination.innerHTML =
-    quoteArray[index].substring(0, textPosition) + "<span>\u25AE</span>";
-
-  if (textPosition++ != quoteArray[index].length) {
-    setTimeout("typewriter()", 100);
-  } else {
-    quoteArray[index] = " ";
-    setTimeout("typewriter()", 3000);
-    textPosition = 0;
-    flag = true;
-  }
+function pushQuote() {
+  getQuote();
+  setTimeout("pushQuote()", 7000);
 }

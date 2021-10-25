@@ -16,13 +16,6 @@ body {
   font-size: 1.5rem;
   font-family: "Cinzel", serif;
   background-color: #31202b;
-  /* background: rgb(2, 0, 36);
-  background: linear-gradient(
-    362deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(98, 3, 13, 1) 50%,
-    rgba(255, 50, 81, 1) 100%
-  ); */
   color: #f4f4f4;
   text-shadow: 0 0 10px #f4f4f4;
 }
@@ -34,11 +27,42 @@ body {
   word-wrap: break-word;
 }
 
-span {
+button {
+  background-color: #31202b;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  font-family: "Cinzel", serif;
+  /* letter-spacing: 2px; */
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  color: #f4f4f4;
+}
+
+/* span {
   animation: blinker 1s linear infinite;
 }
 @keyframes blinker {
   50% {
+    opacity: 0;
+  }
+} */
+
+/* ---- */
+
+.fade {
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation: fadeInOut 7s ease-in-out 0.25s infinite;
+}
+
+@keyframes fadeInOut {
+  /* 0% {
+    opacity: 0;
+  } */
+  75% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
