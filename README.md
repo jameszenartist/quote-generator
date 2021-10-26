@@ -3,7 +3,7 @@
 ### Welcome to my Quote Generator Project created with Javascript!
 
 <br>
-I decided it was about time to strengthen my programming skills by diving deeper into Javascript, and what better way than to build my first quote generator!
+I decided it was about time to strengthen my programming skills by diving deeper into asynchronous Javascript while using APIs, and what better way than to build my first quote generator!
 
 The source of the code can also be found on my portfolio website:
 
