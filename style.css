@@ -17,38 +17,75 @@ body {
   font-family: "Cinzel", serif;
   background-color: #31202b;
   color: #f4f4f4;
-  text-shadow: 0 0 10px #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  text-align: center;
+  /* border: 5px solid rgba(49, 32, 43, 0.2); */
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .quote {
-  width: 60%;
+  margin: auto 1rem;
+  width: 80%;
   height: auto;
   padding: 1rem;
   word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #f4f4f4;
+  animation: fadeInOut 5s ease-in-out 0.25s linear;
 }
 
 button {
-  background-color: #31202b;
-  border: 1px solid #f4f4f4;
+  margin: 2rem;
+  /* background-color: #31202b; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   font-family: "Cinzel", serif;
-  /* letter-spacing: 2px; */
   font-size: 1.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem;
   color: #f4f4f4;
 }
 
-.fade {
-  opacity: 0;
-  animation-name: fadeInOut;
-  animation: fadeInOut 7s ease-in-out 0.25s infinite;
-}
-
 @keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
   75% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .quote {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .quote {
+    width: 95%;
   }
 }
