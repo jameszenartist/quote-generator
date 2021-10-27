@@ -1,5 +1,4 @@
 let destination = document.querySelector(".quote");
-destination.addEventListener("load", addClass);
 
 async function getQuote() {
   try {
@@ -8,12 +7,15 @@ async function getQuote() {
       .then((data) => {
         destination.innerHTML = `${data.content}`;
       });
+    destination.classList.add("fade");
+    setTimeout(removeClass, 7000);
     return response;
   } catch (err) {
     console.log(err);
   }
 }
 
-function addClass() {
-  document.querySelector("quote").classList.add("fade");
+function removeClass() {
+  destination.classList.remove("fade");
+  destination.style.opacity = 0;
 }
