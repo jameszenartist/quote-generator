@@ -1,4 +1,5 @@
 let destination = document.querySelector(".quote");
+let button = document.querySelector(".btn");
 
 async function getQuote() {
   try {
@@ -8,7 +9,7 @@ async function getQuote() {
         destination.innerHTML = `${data.content}`;
       });
     destination.classList.add("fade");
-    setTimeout(removeClass, 7000);
+    setTimeout(removeClass, 9000);
     return response;
   } catch (err) {
     console.log(err);
@@ -17,5 +18,12 @@ async function getQuote() {
 
 function removeClass() {
   destination.classList.remove("fade");
+  button.classList.remove("fadeout");
+  button.disabled = false;
   destination.style.opacity = 0;
+}
+
+function btnFade() {
+  button.classList.add("fadeout");
+  button.disabled = true;
 }
