@@ -9,7 +9,7 @@ The source of the code can also be found on my portfolio website:
 
 [syntaxsamurai.com](https://syntaxsamurai.com/)
 
-While currently the app is in a basic functioning state, I can assure you that updates such as UI/UX design, JS functionality, will be implemented in iterations as soon as I can! I also fully intend on using this as an opportunity to learn about and incorporate the use of new tools and features.
+While currently the app is in a basic functioning state, I can assure you that updates such as UI/UX design, JS functionality, will be implemented in iterations as much as I can! I also fully intend on using this as an opportunity to learn about and incorporate the use of new tools and features.
 
 ## Table of contents:
 
@@ -21,7 +21,7 @@ While currently the app is in a basic functioning state, I can assure you that u
 
 ## Built With
 
-Currently with just HTML/CSS/JS, but in the near future intentions are to implement Netlify on the front end, and possibly some various Javascript libraries.
+Currently with just HTML/CSS/JS and, but in the near future intentions are to implement additional Javascript animations, libraries, and quote APIs.
 
 ## Issues
 
