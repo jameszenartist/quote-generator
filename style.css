@@ -42,13 +42,26 @@ body {
   text-shadow: 0 0 10px #f4f4f4;
 }
 
+.fadeout,
+.fadeoutBtn,
+.fadeInBtn {
+  cursor: inherit;
+}
+
 .fade {
-  animation: fadeInOut 7s ease-in-out forwards 1;
+  animation: fadeIn 7s ease-in-out forwards 1;
 }
 
 .fadeout {
-  animation: fadeout 0.75s ease-in-out forwards 1;
-  cursor: inherit;
+  animation: fadeout 2s ease-in-out forwards 1;
+}
+
+.fadeoutBtn {
+  animation: fadeoutBtn 1s ease-in-out forwards 1;
+}
+
+.fadeInBtn {
+  animation: fadeInBtn 1s ease-in-out forwards 1;
 }
 
 button {
@@ -63,21 +76,33 @@ button {
   color: #f4f4f4;
 }
 
-@keyframes fadeInOut {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
-  75% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 @keyframes fadeout {
   to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeoutBtn {
+  to {
     opacity: 0.4;
+  }
+}
+
+@keyframes fadeInBtn {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
