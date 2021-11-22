@@ -10,8 +10,8 @@ async function getQuote() {
       .then((data) => {
         wordCount = data.content.split(" ").length;
         time = wordCount * 200;
-        if (time >= baseTime) {
-          baseTime = time;
+        if (wordCount >= 20) {
+          baseTime += time;
         }
         destination.innerHTML = `${data.content}`;
       });
