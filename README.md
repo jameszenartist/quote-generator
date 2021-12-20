@@ -9,8 +9,6 @@ The source of the code can also be found on my portfolio website:
 
 [syntaxsamurai.com](https://syntaxsamurai.com/)
 
-While currently the app is in a basic functioning state, I can assure you that updates such as UI/UX design, JS functionality, will be implemented in iterations as much as I can! I also fully intend on using this as an opportunity to learn about and incorporate the use of new tools and features.
-
 ## Table of contents:
 
 - [Built With](#built-with)
@@ -38,4 +36,4 @@ Pull requests are always welcome, and I'll do my best to do reviews as fast as I
 
 ## Motivation
 
-My motivation was to deepen my understanding of Javascript, so as to increase the potential for job opportunities and build upon my current programming skills.
+My motivation was to deepen my understanding of Javascript and making API calls, with the intentions of building upon my current programming skills.
